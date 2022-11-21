@@ -22,6 +22,6 @@ jobs:
         java-version: '11'
         distribution: 'temurin'
     - name: Compile Testing Code
-      run: javac CSC499HW3.java
+      run: javac CSC499HW3/src/csc499hw3/CSC499HW3.java
     - name: Run Testing Code
       run: java CSC499HW3
