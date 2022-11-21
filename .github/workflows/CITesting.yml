@@ -24,4 +24,4 @@ jobs:
     - name: Compile Testing Code
       run: javac CSC499HW3/src/csc499hw3/CSC499HW3.java
     - name: Run Testing Code
-      run: java -classpath CSC499HW3/src/csc499hw3/CSC499HW3.java
+      run: java -classpath CSC499HW3/src/csc499hw3/CSC499HW3.java CSC499HW3
