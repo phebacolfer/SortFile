@@ -12,9 +12,9 @@ public class CSC499HW3 {
     public static void main(String[] args) throws IOException {
         BufferedReader in = null;
         BufferedWriter write = null;
-        Process initial = new ProcessBuilder("javac", "resources/UpdatedFileSort.java").start();
-        ProcessBuilder forward = new ProcessBuilder("java", "resources/UpdatedFileSort.java", "f");
-        ProcessBuilder reverse = new ProcessBuilder("java", "resources/UpdatedFileSort.java", "r");
+        Process initial = new ProcessBuilder("javac", "CSC499HW3/resources/UpdatedFileSort.java").start();
+        ProcessBuilder forward = new ProcessBuilder("java", "CSC499HW3/resources/UpdatedFileSort.java", "f");
+        ProcessBuilder reverse = new ProcessBuilder("java", "CSC499HW3/resources/UpdatedFileSort.java", "r");
         forward.redirectErrorStream(true);
         reverse.redirectErrorStream(true);
         
@@ -35,7 +35,7 @@ public class CSC499HW3 {
         while ((line2 = reader2.readLine()) != null) {
             revOut += line2.substring(1)+"\n";
         }
-        in = new BufferedReader(new FileReader("resources/Sorted Text.txt"));
+        in = new BufferedReader(new FileReader("CSC499HW3/resources/Sorted Text.txt"));
         String curLine = in.readLine();
         String forRight = "";
         String revRight = "";
@@ -43,7 +43,7 @@ public class CSC499HW3 {
                 forRight += curLine+"\n";
                 curLine = in.readLine();
             }
-        in = new BufferedReader(new FileReader("resources/Sorted Text.txt"));
+        in = new BufferedReader(new FileReader("CSC499HW3/resources/Sorted Text.txt"));
         String newLine = in.readLine();
         while (newLine != null) {
                 revRight += newLine+"\n";
